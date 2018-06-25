@@ -22,7 +22,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    GridView listView;
+    GridView gridView;
 
     int image[] = {R.drawable.ic_launcher_background,R.drawable.ic_launcher_foreground
             ,R.drawable.ic_launcher_background,R.drawable.ic_launcher_foreground
@@ -35,9 +35,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        listView= findViewById(R.id.gridview);
+        gridView= findViewById(R.id.gridview);
         myadapter arrayAdapter = new myadapter(this,R.layout.item,tv,image);
-        listView.setAdapter(arrayAdapter);
+        gridView.setAdapter(arrayAdapter);
 
     }
 }
